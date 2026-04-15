@@ -331,7 +331,7 @@ export default function DashboardPage() {
         >
           <p style={{ fontSize: "20px", marginBottom: "8px" }}>⚠️ {error}</p>
           <p style={{ fontSize: "14px", color: "var(--color-text-muted)" }}>
-            Make sure the Django backend is running on port 8000.
+            Make sure the Django backend is running.
           </p>
           <button
             onClick={() => fetchBooks(page)}

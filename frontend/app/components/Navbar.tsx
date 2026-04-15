@@ -101,7 +101,7 @@ export default function Navbar() {
 
         {/* GitHub badge */}
         <a
-          href="http://localhost:8000"
+          href="https://bookautomation.onrender.com"
           target="_blank"
           rel="noopener noreferrer"
           title="API Docs"
