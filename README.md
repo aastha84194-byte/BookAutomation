@@ -20,7 +20,7 @@ A full-stack web application that scrapes books from the web, stores them in a d
 
 ---
 
-![Landing Page](image2.png)
+![Landing Page](image.png)
 ![AI insights](image1.png)
 ![Chat History](image-1.png)
 
