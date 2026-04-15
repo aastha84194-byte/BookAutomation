@@ -1,7 +1,7 @@
 # --- BookAutomation Production Dockerfile ---
 # Unified Web + Worker container for Render Free Tier
 
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 # Prevents Python from writing .pyc files and ensures output is unbuffered
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y \
     apt-transport-https \
     curl \
     unzip \
-    libgconf-2-4 \
     libnss3 \
     libxss1 \
     libasound2 \
@@ -27,7 +26,7 @@ RUN apt-get update && apt-get install -y \
     libexpat1 \
     libfontconfig1 \
     libgcc1 \
-    libgdk-pixbuf2.0-0 \
+    libgdk-pixbuf-2.0-0 \
     libglib2.0-0 \
     libgtk-3-0 \
     libnspr4 \
@@ -40,15 +39,12 @@ RUN apt-get update && apt-get install -y \
     libxcomposite1 \
     libxcursor1 \
     libxdamage1 \
-    libext6 \
     libxfixes3 \
     libxi6 \
     libxrandr2 \
     libxrender1 \
     libxtst6 \
     fonts-liberation \
-    libappindicator1 \
-    libnss3 \
     lsb-release \
     xdg-utils \
     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
